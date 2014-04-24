@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/base_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="top" android:background="@drawable/header_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_iphone_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_edit" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="\@style/IPhone_Button_Left_DarkBLue_Style" />
+        <TextView android:id="@id/textview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_label" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="\@style/Header_TextView_Style" />
+        <Button android:id="@id/btn_iphone_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="\@style/IPhone_Button_Add_Style" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/iphone_alarm_clock_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.aedesign.deskclock.alarmclock.IphoneAlarmClockListView android:id="@id/alarms_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="49.0dip" android:layout_weight="1.0" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/no_alarm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="160.0dip" android:text="@string/no_alarm_text" style="\@style/Header_TextView_Style" />
+    </LinearLayout>
+</LinearLayout>

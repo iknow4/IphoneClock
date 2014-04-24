@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/button_worldclock" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/world_clock_title" />
+    <Button android:id="@id/button_alarmclock" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/alarm_clock_title" />
+    <Button android:id="@id/button_stopwatch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/stop_watch_title" />
+    <Button android:id="@id/button_timer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/timer_title" />
+    <Button android:id="@id/button_timeselector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/timer_selecotr_title" />
+</LinearLayout>

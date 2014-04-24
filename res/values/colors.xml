@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="blue">#ff00ffff</color>
+    <color name="iphone_gray_text_color">#ff56565b</color>
+    <color name="lightgray">#ff808080</color>
+    <color name="royalblue">#ff596d96</color>
+    <color name="littleblue">#ffdbe2ed</color>
+    <color name="darkred">#ffff0000</color>
+    <color name="lightblack">#ff1f2839</color>
+    <color name="lightblue">#ff377cdb</color>
+</resources>

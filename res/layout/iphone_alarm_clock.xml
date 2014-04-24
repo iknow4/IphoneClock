@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:iphone="http://schemas.android.com/apk/res/com.hskj">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/iphone_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="top" android:orientation="horizontal" android:background="@drawable/header_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_iphone_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="\@style/IPhone_Button_Left_LightBlue_Style" />
+            <TextView android:id="@id/textview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_label" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="\@style/Header_TextView_Style" />
+            <Button android:id="@id/btn_iphone_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_done" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="\@style/IPhone_Button_Right_DarkBLue_Style" />
+        </RelativeLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/iphone_alarm_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

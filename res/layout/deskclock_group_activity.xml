@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:iphone="http://schemas.android.com/apk/res/com.aedesign.deskclock">
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/iphoneTabsActivityContentLinearLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/iphonephone_bottom_bar" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_marginBottom="0.0dip">
+        <com.aedesign.deskclock.ui.IphoneTabBarItemLayout android:id="@id/iphone_tab_item_worldclock" iphone:tabItemMainImageViewBackgroundOn="@drawable/iphone_worldclock_bar_focus" iphone:tabItemMainImageViewBackgroundOff="@drawable/iphone_worldclock_bar_normal" style="\@style/Iphone_DeskClock_Tab_Bar_Item_Style" />
+        <com.aedesign.deskclock.ui.IphoneTabBarItemLayout android:id="@id/iphone_tab_item_alarmclock" iphone:tabItemMainImageViewBackgroundOn="@drawable/iphone_alarmclock_bar_focus" iphone:tabItemMainImageViewBackgroundOff="@drawable/iphone_alarmclock_bar_normal" style="\@style/Iphone_DeskClock_Tab_Bar_Item_Style" />
+        <com.aedesign.deskclock.ui.IphoneTabBarItemLayout android:id="@id/iphone_tab_item_stopwatch" iphone:tabItemMainImageViewBackgroundOn="@drawable/iphone_stopwatch_bar_focus" iphone:tabItemMainImageViewBackgroundOff="@drawable/iphone_stopwatch_bar_normal" style="\@style/Iphone_DeskClock_Tab_Bar_Item_Style" />
+        <com.aedesign.deskclock.ui.IphoneTabBarItemLayout android:id="@id/iphone_tab_item_timer" android:layout_marginBottom="0.0dip" iphone:tabItemMainImageViewBackgroundOn="@drawable/iphone_timer_bar_focus" iphone:tabItemMainImageViewBackgroundOff="@drawable/iphone_timer_bar_normal" style="\@style/Iphone_DeskClock_Tab_Bar_Item_Style" />
+    </LinearLayout>
+</FrameLayout>

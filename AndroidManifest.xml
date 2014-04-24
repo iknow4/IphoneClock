@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest android:versionCode="1" android:versionName="1.0.1" package="com.aedesign.deskclock"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="7" />
+    <supports-screens android:smallScreens="false" />
+    <original-package android:name="com.aedesign.alarmclock" />
+    <original-package android:name="com.aedesign.deskclock" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <application android:label="@string/app_label" android:icon="@drawable/icon">
+        <activity android:label="@string/app_label" android:name=".DeskClockGroupActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".stopwatch.IphoneStopwatchActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.stopwatch" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".timer.IphoneTimerActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.timer" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".worldclock.IphoneWorldClockActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.worldclock" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".worldclock.ZoneList" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.zonelist" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".timer.IphoneTimerAlertVoiceActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.timeralertvoice" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".alarmclock.IphoneAlarmRepeatActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.alarmrepeat" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".alarmclock.IphoneAlarmRingActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.alarmring" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".alarmclock.IphoneAlarmLabelActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.alarmlabel" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Transparent" android:name=".IphoneTransparentActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.transacti" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <provider android:name=".alarmclock.AlarmProvider" android:authorities="com.aedesign.alarmclock" />
+        <activity android:label="@string/app_label" android:icon="@drawable/ic_widget_analog_clock" android:name=".alarmclock.AlarmClock" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.alarmclock" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/settings" android:name=".alarmclock.SettingsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/set_alarm" android:name=".alarmclock.SetAlarm" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|navigation|orientation" />
+        <activity android:theme="@style/alarm_alert" android:name=".alarmclock.AlarmAlert" android:taskAffinity="" android:excludeFromRecents="true" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|navigation|orientation" />
+        <activity android:theme="@android:style/Theme.Wallpaper.NoTitleBar" android:name=".alarmclock.AlarmAlertFullScreen" android:taskAffinity="" android:excludeFromRecents="true" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|navigation|orientation" />
+        <activity android:name=".alarmclock.ClockPicker" android:screenOrientation="portrait" />
+        <receiver android:name=".alarmclock.AlarmReceiver">
+            <intent-filter>
+                <action android:name="com.aedesign.alarmclock.ALARM_ALERT" />
+                <action android:name="alarm_killed" />
+                <action android:name="cancel_snooze" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".alarmclock.AlarmKlaxon">
+            <intent-filter>
+                <action android:name="com.aedesign.alarmclock.ALARM_ALERT" />
+            </intent-filter>
+        </service>
+        <receiver android:name=".alarmclock.AlarmInitReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:label="@string/analog_gadget" android:icon="@drawable/ic_widget_analog_clock" android:name=".alarmclock.AnalogAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/analog_appwidget" />
+        </receiver>
+        <receiver android:name=".TimerBroadcastRecevier">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.app.IPHONE_TIMER" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

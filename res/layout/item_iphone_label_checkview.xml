@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.aedesign.deskclock.ui.IphoneLabelCheckView android:id="@id/iphonevoice_recorde_introduction_info_nothing" android:layout_width="fill_parent" android:layout_height="wrap_content" style="\@style/Iphone_Label_Check_View_Style"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <dimen name="iphoneview_checkboxview_checkbox_left">200.0dip</dimen>
+    <dimen name="iphoneview_checkboxview_checkbox_leftmargin">54.0dip</dimen>
+    <dimen name="iphoneview_checkboxview_top">9.0dip</dimen>
+    <dimen name="iphoneview_checkboxview_textview_left">8.0dip</dimen>
+</resources>

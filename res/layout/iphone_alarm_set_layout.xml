@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/iphone_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="top" android:orientation="horizontal" android:id="@id/header_layout" android:background="@drawable/header_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="\@style/IPhone_Button_Left_DarkBLue_Style" />
+        <TextView android:id="@id/textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_alarm" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="\@style/Header_TextView_Style" />
+        <Button android:id="@id/btn_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_alarm" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="\@style/IPhone_Button_Right_LightBlue_Style" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/page_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header_layout">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="190.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.aedesign.deskclock.ui.AutoPressRelativeLayout android:id="@id/setRepeat" android:background="@drawable/iphonesettings_recttopround_arrow" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                    <TextView android:textColor="@color/iphone_text_color_lightgray_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/repeat" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textColor="@color/iphone_text_color_rayalblue_white" android:id="@id/repeat_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:text="@string/never" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </com.aedesign.deskclock.ui.AutoPressRelativeLayout>
+                <com.aedesign.deskclock.ui.AutoPressRelativeLayout android:id="@id/alert" android:background="@drawable/iphonesettings_rectnoround_arrow" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/vibrate">
+                    <TextView android:textColor="@color/iphone_text_color_lightgray_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/vibrate" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textColor="@color/iphone_text_color_rayalblue_white" android:id="@id/alert_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:text="@string/defualt_alert_voice" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </com.aedesign.deskclock.ui.AutoPressRelativeLayout>
+                <com.aedesign.deskclock.ui.AutoPressRelativeLayout android:id="@id/sleep" android:background="@drawable/iphonesettings_rectnoround_white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                    <TextView android:textColor="@color/lightgray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/sleep" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <com.aedesign.deskclock.ui.CheckboxView android:id="@id/sleep_check_box" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </com.aedesign.deskclock.ui.AutoPressRelativeLayout>
+                <com.aedesign.deskclock.ui.AutoPressRelativeLayout android:id="@id/label" android:background="@drawable/iphonesettings_rectbottomround_arrow" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                    <TextView android:textColor="@color/iphone_text_color_lightgray_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/label" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textColor="@color/iphone_text_color_rayalblue_white" android:id="@id/label_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="80.0dip" android:layout_marginRight="30.0dip" android:text="@string/default_label" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </com.aedesign.deskclock.ui.AutoPressRelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@id/time_selector_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="104.0dip" android:layout_alignParentBottom="true">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <com.aedesign.deskclock.ui.timeselector.TimeListView android:layout_gravity="center" android:id="@id/am_pm_selector" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="71.0dip" android:layout_height="210.0dip" android:divider="@android:color/transparent" />
+                    <com.aedesign.deskclock.ui.timeselector.TimeCircleListView android:layout_gravity="center" android:id="@id/timeselector_listview_hour" android:focusableInTouchMode="true" android:layout_width="55.0dip" android:layout_height="210.0dip" android:divider="@android:color/transparent" />
+                    <com.aedesign.deskclock.ui.timeselector.TimeCircleListView android:layout_gravity="center" android:id="@id/timeselector_listview_minute" android:focusableInTouchMode="true" android:layout_width="65.0dip" android:layout_height="210.0dip" android:divider="@android:color/transparent" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/time_selector_bg" android:background="@drawable/set_alarm_time_selector_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

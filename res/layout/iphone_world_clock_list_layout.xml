@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="top" android:orientation="horizontal" android:background="@drawable/header_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_iphone_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_edit" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="\@style/IPhone_Button_Left_DarkBLue_Style" />
+        <TextView android:id="@id/textview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iphone_world_clock_title" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="\@style/Header_TextView_Style" />
+        <Button android:id="@id/btn_iphone_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="\@style/IPhone_Button_Add_Style" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/iphone_world_clock_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="49.0dip">
+        <com.aedesign.deskclock.worldclock.IphoneWorldClockListView android:id="@id/iphone_world_clock_list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/no_clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="65.0dip" android:text="@string/no_clock_text" style="\@style/Header_TextView_Style" />
+    </RelativeLayout>
+</LinearLayout>

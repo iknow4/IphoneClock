@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout android:orientation="vertical" android:background="@drawable/iphone_timer_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:iphone="http://schemas.android.com/apk/res/com.aedesign.deskclock">
+    <RelativeLayout android:layout_gravity="top" android:id="@id/time_selector_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="38.0dip" android:layout_marginRight="38.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.aedesign.deskclock.ui.timeselector.TimeListView android:layout_gravity="center" android:id="@id/timeselector_listview_hour" android:focusableInTouchMode="true" android:layout_width="122.0dip" android:layout_height="215.0dip" android:divider="@android:color/transparent" />
+            <com.aedesign.deskclock.ui.timeselector.TimeCircleListView android:layout_gravity="center" android:id="@id/timeselector_listview_minute" android:focusableInTouchMode="true" android:layout_width="122.0dip" android:layout_height="215.0dip" android:divider="@android:color/transparent" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/hour_minute_text" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="22.0sp" android:textColor="@android:color/black" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="90.0dip" android:layout_marginTop="95.0dip" android:text="@string/hour_text" />
+        <TextView android:textSize="22.0sp" android:textColor="@android:color/black" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="210.0dip" android:layout_marginTop="95.0dip" android:text="@string/minute_text" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="top" android:id="@id/time_selector_bg" android:background="@drawable/timeselector_frame_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/time_relative_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="67.0dip">
+        <TextView android:textSize="78.0dip" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@id/timer_text_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <com.aedesign.deskclock.ui.AutoPressRelativeLayout android:layout_gravity="center_vertical" android:id="@id/timer_select_alert_voice_layout" android:background="@drawable/iphone_timer_select_alert_voice_button" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="70.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/iphone_timer_text_color" android:id="@id/alert_voice_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/timer_alert_voice_title" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/iphone_timer_alert_text_color" android:gravity="right" android:id="@id/alert_voice_text" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:text="@string/iphone_timer_sleep_type_voice" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </com.aedesign.deskclock.ui.AutoPressRelativeLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="70.0dip">
+        <com.aedesign.deskclock.ui.IphoneTwoStatusControlImageButton android:id="@id/timer_start_or_stop" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" iphone:statusOneImage="@drawable/iphone_timer_start_button" iphone:statusTwoImage="@drawable/iphone_timer_stop_button" iphone:onStatusOne="true" />
+    </RelativeLayout>
+</FrameLayout>

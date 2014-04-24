@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.aedesign.deskclock.worldclock.IphoneWorldClockListItem android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/normal_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/top_relative" android:background="@drawable/iphone_clock_list_bg" android:layout_width="fill_parent" android:layout_height="@dimen/normal_height" android:layout_alignParentBottom="true">
+        <com.aedesign.deskclock.ui.SmsLeftYuan android:id="@id/img_iphone_item_mius" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/clock_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:shadowDy="10.0" android:layout_centerVertical="true" />
+        <com.aedesign.deskclock.worldclock.IphoneAnalogClock android:layout_gravity="center_horizontal" android:id="@id/iphone_world_clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/time_layout" android:layout_width="97.0dip" android:layout_height="wrap_content" android:layout_marginLeft="223.0dip" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/am_pm_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:text="@string/clock_am_text" android:singleLine="true" />
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@id/iphone_world_clock_time_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:singleLine="true" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="#ff000000" android:gravity="right" android:layout_gravity="right" android:id="@id/day_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/clock_today_text" android:singleLine="true" />
+        </LinearLayout>
+        <Button android:id="@id/icon" android:background="@drawable/iphone_item_turnto_edit" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <Button android:id="@id/world_clock_delete_button" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="\@style/MinusButton" />
+    </RelativeLayout>
+</com.aedesign.deskclock.worldclock.IphoneWorldClockListItem>

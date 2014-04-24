@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <attr name="checkboxSrcPress" format="reference" />
+    <attr name="checkboxSrcUnpress" format="reference" />
+    <attr name="checkboxText" format="string" />
+    <attr name="checkboxChecked" format="boolean" />
+    <attr name="labelText" format="reference" />
+    <attr name="iphoneLabelTextSize" format="dimension" />
+    <attr name="labelTextColor" format="reference|color" />
+    <attr name="labelCheckedTextColor" format="reference|color" />
+    <attr name="labelSrc" format="reference" />
+    <attr name="labelMarginLeft" format="dimension" />
+    <attr name="labelMarginRight" format="dimension" />
+    <attr name="labelLeftSrc" format="reference" />
+    <attr name="statusOneImage" format="reference" />
+    <attr name="statusTwoImage" format="reference" />
+    <attr name="onStatusOne" format="boolean" />
+    <attr name="tabItemMainImageViewBackgroundOn" format="reference" />
+    <attr name="tabItemMainImageViewBackgroundOff" format="reference" />
+    <attr name="tabItemMainImageViewWidth" format="dimension" />
+    <attr name="tabItemMainImageViewHeight" format="dimension" />
+    <attr name="tabItemSubTextViewBackgroundOn" format="reference" />
+    <attr name="tabItemSubTextViewBackgroundOff" format="reference" />
+    <attr name="tabItemSubTextViewWidth" format="dimension" />
+    <attr name="tabItemSubTextViewHeight" format="dimension" />
+</resources>

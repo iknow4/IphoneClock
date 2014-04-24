@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/timeselector_editText" android:layout_width="60.0dip" android:layout_height="30.0dip" />
+            <Button android:id="@id/timeselector_button" android:layout_width="40.0dip" android:layout_height="30.0dip" />
+            <TextView android:id="@id/timeselector_textView" android:layout_width="200.0dip" android:layout_height="30.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="0.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.aedesign.deskclock.ui.timeselector.TimeCircleListView android:layout_gravity="center" android:id="@id/timeselector_listview1" android:focusableInTouchMode="true" android:layout_width="145.0dip" android:layout_height="225.0dip" android:divider="#ff00ff00" />
+            <com.aedesign.deskclock.ui.timeselector.TimeCircleListView android:layout_gravity="center" android:id="@id/timeselector_listview2" android:focusableInTouchMode="true" android:layout_width="145.0dip" android:layout_height="225.0dip" android:divider="@android:color/transparent" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:background="@drawable/timeselector_frame_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

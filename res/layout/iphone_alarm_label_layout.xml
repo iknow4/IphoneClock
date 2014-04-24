@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/iphone_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="top" android:orientation="horizontal" android:background="@drawable/header_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="\@style/IPhone_Left_Arrow_Shape_Button_Style" />
+        <TextView android:id="@id/textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="\@style/Header_TextView_Style" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dip">
+            <EditText android:id="@id/label_edit_text" android:background="@drawable/iphone_alarm_label_edit_text_bg" android:paddingLeft="20.0dip" android:paddingRight="50.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <Button android:id="@id/btn_clear" android:background="@drawable/iphone_clean_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

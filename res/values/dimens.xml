@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <dimen name="time_circle_listview_hour">85.0dip</dimen>
+    <dimen name="time_circle_listview_minute">79.0dip</dimen>
+    <dimen name="time_circle_listview_timer_minute">94.0dip</dimen>
+    <dimen name="time_listview_timer_ampm">80.0dip</dimen>
+    <dimen name="time_listview_timer_hour">94.0dip</dimen>
+    <dimen name="time_selector_layout_left_margin">67.0dip</dimen>
+    <dimen name="area_textview_left_margin_delta">39.0dip</dimen>
+    <dimen name="normal_height">92.0dip</dimen>
+    <dimen name="expanded_height">184.0dip</dimen>
+    <dimen name="area_left_margin_delta">39.0dip</dimen>
+    <dimen name="worldclock_left_margin">122.0dip</dimen>
+</resources>

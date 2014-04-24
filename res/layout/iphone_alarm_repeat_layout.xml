@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/iphone_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="top" android:orientation="horizontal" android:background="@drawable/header_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="\@style/IPhone_Left_Arrow_Shape_Button_Style" />
+        <TextView android:id="@id/textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_alarm" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="\@style/Header_TextView_Style" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/alarm_repeat_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

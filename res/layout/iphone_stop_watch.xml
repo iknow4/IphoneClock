@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/iphone_stopwatch_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="30.0sp" android:gravity="bottom|right|center" android:id="@id/tv_each_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="45.0dip" android:text="@string/defualt_time_text" android:singleLine="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="75.0sp" android:gravity="bottom|center" android:id="@id/tv_stopwatch_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-17.0dip" android:text="@string/defualt_time_text" android:singleLine="true" android:layout_below="@id/tv_each_time" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_stopwatch_time">
+            <Button android:textSize="20.0dip" android:textColor="@android:color/white" android:id="@id/ib_stopwatch" android:background="@drawable/iphone_stopwatch_start_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/stopwatch_start_button_text" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <Button android:textSize="20.0dip" android:id="@id/ib_each_time" android:background="@drawable/iphone_stopwatch_reset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="@string/stopwatch_reset_button_text" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="49.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_eachtime_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ScrollView>
+</LinearLayout>

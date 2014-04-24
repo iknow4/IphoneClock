@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.aedesign.deskclock.alarmclock.IphoneAlarmClockListItem android:background="@drawable/iphone_clock_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.aedesign.deskclock.ui.SmsLeftYuan android:id="@id/img_iphone_item_mius" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <com.aedesign.deskclock.alarmclock.DigitalClock android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/digitalClock" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" android:layout_centerVertical="true">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/am_pm" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/iphone_text_color_black_white" android:gravity="bottom" android:id="@id/iphone_am_pm" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:includeFontPadding="false" android:layout_weight="0.5" />
+                <TextView android:id="@id/am" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <TextView android:id="@id/pm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <TextView android:textSize="25.0sp" android:textColor="@color/iphone_text_color_black_white" android:id="@id/timeDisplay" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/iphone_gray_white_text_color" android:id="@id/daysOfWeek" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/iphone_gray_white_text_color" android:id="@id/label" android:paddingRight="100.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </com.aedesign.deskclock.alarmclock.DigitalClock>
+    <com.aedesign.deskclock.ui.CheckboxView android:layout_gravity="center_vertical" android:id="@id/alarmButton" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <Button android:id="@id/right_arrow" android:background="@drawable/iphone_right_arrow" android:visibility="invisible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <Button android:id="@id/alarm_clock_delete_button" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="\@style/MinusButton" />
+</com.aedesign.deskclock.alarmclock.IphoneAlarmClockListItem>

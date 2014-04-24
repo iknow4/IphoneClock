@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.aedesign.deskclock.ui.IphoneBottomPopupView android:orientation="vertical" android:id="@id/iphoneview_bottom_popupwindow" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iphoneview_bottom_popup_view_content_imageview" android:background="@drawable/iphoneview_popupwindow_content_imageview_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="330.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/iphoneview_bottom_popup_view_content_layout" android:background="@drawable/iphoneview_popupwindow_contentlayout_bg_black" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.aedesign.deskclock.ui.IphoneBottomPopupView>

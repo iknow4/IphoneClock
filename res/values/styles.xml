@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <style name="clock">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="alarm_alert" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="MinusButton">
+        <item name="android:background">@drawable/iphone_delete_small</item>
+    </style>
+    <style name="Iphone_DeskClock_Tab_Bar_Item_Style" parent="@style/Iphone_Tab_Bar_Item_Style">
+        <item name="tabItemMainImageViewWidth">80.0dip</item>
+    </style>
+    <style name="Transparent" parent="@android:style/Theme">
+        <item name="android:colorForeground">#ffffffff</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    <style name="Iphone_Tab_Bar_Item_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="tabItemMainImageViewWidth">64.0dip</item>
+        <item name="tabItemMainImageViewHeight">49.0dip</item>
+        <item name="tabItemSubTextViewWidth">20.0dip</item>
+        <item name="tabItemSubTextViewHeight">20.0dip</item>
+    </style>
+    <style name="Iphone_BottomPopupWindow_Animation_Style">
+        <item name="android:windowEnterAnimation">@anim/iphonephone_popupwindow_anim_enter</item>
+        <item name="android:windowExitAnimation">@anim/iphonephone_popupwindow_anim_exit</item>
+    </style>
+    <style name="Header_TextView_Style" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/iphone_button_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:maxWidth">140.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="IPhone_Button_Style" parent="@android:style/Widget.Button">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/iphone_button_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxWidth">100.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="IPhone_Button_Left_DarkBLue_Style" parent="@style/IPhone_Button_Style">
+        <item name="android:background">@drawable/iphone_button_left_bg_2</item>
+    </style>
+    <style name="IPhone_Button_Add_Style" parent="@style/IPhone_Button_Style">
+        <item name="android:background">@drawable/iphone_button_add_bg</item>
+    </style>
+    <style name="IPhone_Button_Left_LightBlue_Style" parent="@style/IPhone_Button_Style">
+        <item name="android:background">@drawable/iphone_button_left_bg_1</item>
+    </style>
+    <style name="IPhone_Button_Right_DarkBLue_Style" parent="@style/IPhone_Button_Style">
+        <item name="android:background">@drawable/iphone_button_right_bg_2</item>
+    </style>
+    <style name="IPhone_Left_Arrow_Shape_Button_Style" parent="@style/IPhone_Button_Style">
+        <item name="android:background">@drawable/iphone_button_arraw_bg</item>
+    </style>
+    <style name="IPhone_Button_Right_LightBlue_Style" parent="@style/IPhone_Button_Style">
+        <item name="android:background">@drawable/iphone_button_right_bg_1</item>
+    </style>
+    <style name="Iphone_Label_Check_View_Style">
+        <item name="android:clickable">true</item>
+        <item name="iphoneLabelTextSize">18.0sp</item>
+        <item name="labelTextColor">@color/iphone_text_color_lightblack_white</item>
+        <item name="labelCheckedTextColor">@color/iphone_text_color_rayalblue_white</item>
+        <item name="labelSrc">@drawable/iphoneview_label_check_icon</item>
+        <item name="labelMarginLeft">10.0dip</item>
+        <item name="labelMarginRight">5.0dip</item>
+    </style>
+</resources>
